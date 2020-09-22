@@ -1,16 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--ff-primary: "Roboto", sans-serif;
+	--ff-secondary: "Caveat", cursive;
+	--fw-reg: 400;
+	--fw-bold: 700;
+	--clr-light: #fff;
+	--clr-dark: #474747;
+	--clr-accent: #222439;
+	--clr-gray: #f4f4f4;
+	--clr-moderate-light: #f6f6f6;
+	--clr-moderate-dark: #eeeeee;
+	--dark-bg: #e9e9e9;
+	--light-bg: #fafafa;
+	--table-bg: #fad843;
+	--btn-clr: #c72027;
+	--fs-h1: 4rem;
+	--fs-h2: 3.4rem;
+	--fs-h3: 2.6rem;
+	--fs-h4: 1.6rem;
+	--fs-h5: 1rem;
+	--fs-body: 1.6rem;
+	font-size: 62.5%;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: var(--ff-primary);
+	background-color: var(--light-bg);
+	background-image: none;
+	background-position: top left;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	color: var(--clr-dark);
+	font-size: var(--fs-body);
+	scroll-behavior: smooth;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.MuiSvgIcon-root {
+	font-size: 2.8rem !important;
+}
+
+@media (max-width: 768px) {
+	:root {
+		--fs-h1: 2.6rem;
+		--fs-h2: 2rem;
+		--fs-h3: 1.6rem;
+		--fs-h4: 1rem;
+		--fs-h5: 0.9375rem;
+		--fs-body: 1.6rem;
+	}
+	body {
+		overflow-x: hidden;
+	}
 }
